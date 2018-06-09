@@ -1,0 +1,405 @@
+header
+{
+	animation-name: bg;
+	animation-duration: 20s;
+	animation-iteration-count: 1;
+}
+@keyframes bg
+{
+	0%
+	{background: #E573AE}
+	25%
+	{background: #CD73E5}
+	50%
+	{background: #9773E5}
+	75%
+	{background: #7385E5}
+	100%
+	{background: #73BAE5}
+}
+#ok {
+  -webkit-animation-name: bounceInDown;
+  animation-name: bounceInDown;
+  -webkit-transform-origin: center bottom;
+  transform-origin: center bottom;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes bounceInDown {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -3000px, 0);
+    transform: translate3d(0, -3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25px, 0);
+    transform: translate3d(0, 25px, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes bounceInDown {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -60px, 0);
+    transform: translate3d(0, -60px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25px, 0);
+    transform: translate3d(0, 25px, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+#no{
+  -webkit-animation-name: shake;
+  animation-name: shake;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes shake {
+  from,
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+}
+@keyframes shake {
+  from,
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+}
+.homesText, .gardensText{
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+#formCont2
+{
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-timing-function: ease-out;
+}
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+.businessText, .giftsText {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@-webkit-keyframes fadeInDownBig {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -2000px, 0);
+    transform: translate3d(0, -2000px, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+form
+{
+  animation-name: blink;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes blink
+{
+  0%, 30%, 47%, 53%, 67%, 73%, 100%
+  {
+  box-shadow: 0px 0px 10px #E573AE, inset 0px 0px 10px #E573AE;
+  }
+  33%, 39%, 50%, 70%
+  {
+  box-shadow: 0px 0px 5px #E573AE, inset 0px 0px 5px #E573AE;
+  }
+  36%, 42%
+  {
+  box-shadow: 0px 0px 12px #E573AE, inset 0px 0px 12px #E573AE;
+  }
+}
+
+
+.step h1 span
+{
+  animation-name: blinkL;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes blinkL
+{
+  0%, 30%, 47%, 53%, 67%, 73%, 100%
+  {
+  text-shadow: 0px 0px 10px #E573AE;
+  opacity: 1
+  }
+  33%, 39%, 50%, 70%
+  {
+  text-shadow: 0px 0px 5px #E573AE;
+  opacity: 0.3
+  }
+  36%, 42%
+  {
+  text-shadow: 0px 0px 12px #E573AE;
+  opacity: 1
+  }
+}
+#B
+{
+  width: 180px;
+  height: 180px; 
+  position: absolute;
+  z-index: 990;
+  stroke: #FFFFFF;
+  opacity: 0.9;
+  stroke-dasharray: 800;
+  stroke-dashoffset: 1000; 
+  animation-name: draw;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+#loom 
+{
+  width: 180px;
+  height: 180px; 
+  position: absolute;
+  z-index: 990;
+  stroke: #FFFFFF;
+  opacity: 0.9;
+  stroke-dasharray: 900;
+  stroke-dashoffset: 1000; 
+  animation-name: draw;
+  animation-duration: 3s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+}
+#line 
+{
+  width: 180px;
+  height: 180px; 
+  position: absolute;
+  z-index: 990;
+  stroke: #FFFFFF;
+  opacity: 0.9;
+  stroke-dasharray: 800;
+  stroke-dashoffset: 1000; 
+  animation-name: draw;
+  animation-duration: 2s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+}
+@keyframes draw {
+ to {
+    stroke-dashoffset: 0;
+  }
+}
+#logo
+{
+  -webkit-filter: drop-shadow(1px 1px 5px #C800FF) drop-shadow(1px 1px 8px #CC73E5);      
+    filter: drop-shadow(1px 1px 5px #C800FF) drop-shadow(1px 1px 8px #CC73E5); 
+}
+#logo:hover
+{
+  -webkit-filter: drop-shadow(1px 1px 5px #C800FF) drop-shadow(1px 1px 8px #CC73E5) drop-shadow(1px 1px 20px #F4CCFF);      
+    filter: drop-shadow(1px 1px 5px #C800FF) drop-shadow(1px 1px 8px #CC73E5) drop-shadow(1px 1px 20px #F4CCFF);  
+}
+#logo h2
+{
+  animation-name: appear;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+}
+@keyframes appear {
+ from {
+    opacity: 0 
+  }
+  80% {
+    opacity: 0 
+  }
+  to {
+    opacity: 1 
+  }
+}
+#L
+{
+  animation-name: blinkLL;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  -webkit-animation-play-state: paused;
+  -o-animation-play-state: paused;
+  animation-play-state: paused;
+}
+@keyframes blinkLL
+{
+  0%, 30%, 47%, 53%, 67%, 73%, 100%
+  {
+  opacity: 1
+  }
+  33%, 39%, 50%, 70%
+  {
+  opacity: 0.3
+  }
+  36%, 42%
+  {
+  opacity: 1
+  }
+}
+

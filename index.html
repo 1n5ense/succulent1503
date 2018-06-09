@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Succulents</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="styleAnima.css">
+<link rel="stylesheet" href="styleMobile.css">
+<link rel="stylesheet" href="aos.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+rel="stylesheet">
+<script type="text/javascript" src="fontawesome-all.js"></script>
+<script src="jquery.min.js"></script>
+<script type="text/javascript">
+$(function() {
+$(window).scroll(function() {
+if($(this).scrollTop() != 0) {
+$('#toTop').fadeIn();
+} else {
+$('#toTop').fadeOut();
+}
+});
+$('#toTop').click(function() {
+$('body,html').animate({scrollTop:0}, 1000);
+});
+});
+</script>
+<script type="text/javascript">
+ $(document).ready(function(){
+$("#button1").on("click","a", function (event) {
+event.preventDefault();
+var id= $(this).attr('href'),
+top = $(id).offset().top;
+$('body,html').animate({scrollTop: top}, 1000);
+});
+});
+</script>
+<script type="text/javascript">
+ $(document).ready(function(){
+$("#buttonHomes").on("click","a", function (event) {
+event.preventDefault();
+var id= $(this).attr('href'),
+top = $(id).offset().top;
+$('body,html').animate({scrollTop: top}, 1000);
+});
+});
+</script>
+<script type="text/javascript">
+ $(document).ready(function(){
+$("#buttonBusiness").on("click","a", function (event) {
+event.preventDefault();
+var id= $(this).attr('href'),
+top = $(id).offset().top;
+$('body,html').animate({scrollTop: top}, 1000);
+});
+});
+</script>
+<script type="text/javascript">
+ $(document).ready(function(){
+$("#buttonGardens").on("click","a", function (event) {
+event.preventDefault();
+var id= $(this).attr('href'),
+top = $(id).offset().top;
+$('body,html').animate({scrollTop: top}, 1000);
+});
+});
+</script>
+<script type="text/javascript">
+ $(document).ready(function(){
+$("#buttonGifts").on("click","a", function (event) {
+event.preventDefault();
+var id= $(this).attr('href'),
+top = $(id).offset().top;
+$('body,html').animate({scrollTop: top}, 1000);
+});
+});
+</script>
+<script type="text/javascript">
+ $(document).ready(function(){
+$("#buttonMore").on("click","a", function (event) {
+event.preventDefault();
+var id= $(this).attr('href'),
+top = $(id).offset().top;
+$('body,html').animate({scrollTop: top}, 1000);
+});
+});
+</script>
+<script type="text/javascript">
+ $(document).ready(function(){
+$("#contacts").on("click","a", function (event) {
+event.preventDefault();
+var id= $(this).attr('href'),
+top = $(id).offset().top;
+$('body,html').animate({scrollTop: top}, 1000);
+});
+});
+</script>
+<script>
+function f1()
+{document.getElementById('homes').style.display="block"}
+function fback1()
+{document.getElementById('homes').style.display="none"}
+function f2()
+{document.getElementById('business').style.display="block"}
+function fback2()
+{document.getElementById('business').style.display="none"}
+function f3()
+{document.getElementById('gardens').style.display="block"}
+function fback3()
+{document.getElementById('gardens').style.display="none"}
+function f4()
+{document.getElementById('gifts').style.display="block"}
+function fback4()
+{document.getElementById('gifts').style.display="none"}
+function foverL()
+{document.getElementById('L').style.webkitAnimationPlayState="running"}
+function foutL()
+{document.getElementById('L').style.webkitAnimationPlayState="paused"}
+function fover1()
+{document.getElementById('forHome').style.display="block"}
+function fout1()
+{document.getElementById('forHome').style.display="none"}
+function fover2()
+{document.getElementById('forBusiness').style.display="block"}
+function fout2()
+{document.getElementById('forBusiness').style.display="none"}
+function fover3()
+{document.getElementById('forGarden').style.display="block"}
+function fout3()
+{document.getElementById('forGarden').style.display="none"}
+function fover4()
+{document.getElementById('forGift').style.display="block"}
+function fout4()
+{document.getElementById('forGift').style.display="none"}
+function freg()
+{document.getElementById('regBlock').style.display="block"}
+function fcl()
+{document.getElementById('formCont2').style.display="none"}
+function flogin()
+{document.getElementById('formCont2').style.display="block"}
+function fcheck()
+{document.getElementById('Reg').checked=false;
+document.getElementById('regBlock').style.display="none"}
+function fcheck2()
+{document.getElementById('signIn').checked=false}
+</script>
+<script type="text/javascript">
+function test(form)
+{var no=document.getElementById('no');
+var ok=document.getElementById('ok');
+if (no)
+{
+if (form.name.value == "") {
+no.style.display="block";
+ok.style.display="none";
+}
+else
+if (form.phone.value == "") {
+no.style.display="block";
+ok.style.display="none";
+}
+else
+if (form.email.value == "") {
+no.style.display="block";
+ok.style.display="none";
+}
+else {ok.style.display="block";
+no.style.display="none";
+}
+}
+}
+</script>
+<script type="text/javascript">
+function cmpn()
+{
+var s=document.getElementById('select');
+var cmpn=document.getElementById('company');
+var cT=document.getElementById('companyT');
+if (cmpn)
+{
+if (s.value == "business") 
+{cmpn.style.display = "block";
+cT.style.display = "block";}
+else {cmpn.style.display = "none";
+cT.style.display = "none";}
+}
+}
+</script>
+</head>
+<body>
+<script src="aos.js"></script>
+<script>
+AOS.init();
+</script>
+<div id="formCont2">
+<form name="formLogin">
+<p><i class="material-icons formText" id="close" onclick="fcl()">close</i>
+<input type="radio" id="signIn" onclick="fcheck()" checked><label class="formText"><span class="formText2">Sign in: </span>I have an account!</label></p>
+<p><label class="formText">My email address</label></p>
+<p><input type="text" name="email"></p>
+<p><label class="formText">My password</label></p>
+<p><input type="password" name="password"></p>
+<p><label class="formText"><input type="checkbox">Remember me</label></p>
+<p><label class="formText formText3">
+Forgot password?</label></p>
+<br />
+<input type="radio" id="Reg" onclick="freg(), fcheck2()"><label class="formText"><span class="formText2 formText3">Register: </span>
+I'm a new customer!</label>
+<div id="regBlock">
+<label class="formText">Full name</label>
+<input type="text" name="name">
+<label class="formText">Email address</label>
+<input type="text" name="email">
+<label class="formText">Password</label>
+<input type="password" name="password">
+<label class="formText">Password again</label>
+<input type="password" name="password">
+</div>
+<input type="button" name="buttonLogin" value="Sign in" class="button">
+</form>
+</div>
+<header>
+<div class="headerPhoto">
+<menu>
+<ul>
+<li id="contacts"><a href="#footer">Contact Us</a></li>
+<li onclick="flogin()">Log in</li>
+</ul>
+<div id="logo" onMouseOver="foverL()" onMouseOut="foutL()">
+<svg version="1.2" baseProfile="tiny" id="B" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" overflow="scroll"><path fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M64.6 80.3c-7 6.3-11.1 15.5-15 23.9-4.4 9.6-8 19.9-13.3 29.1-4.6 7.8-9 16.8-18 19.8-7.6 2.5-13.7-3.9-14.1-10.9-1.1-21.3 14.9-40.6 32.5-50.2 7.7-4.2 17.5-8.1 26.4-6.3 6.8 1.3 11.9 7.8 9.7 14.7-2.4 7.6-11.3 12-18 15-4.9 2.2-10 4.8-15.4 5.2 2.3-3.1 22.3-7.9 28.3-.3 4.2 5.3 1.6 13.9-2.8 18.2-5 5-13.3 11.3-31.3 11.8"/></svg>
+<svg version="1.2" baseProfile="tiny" id="loom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" overflow="scroll"><path fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M77.6 124.5c5.6-6.4 11.1-13.4 15.4-20.8 3.2-5.5 5.7-11.1 7-17.5.4-2.1.6-7.5-3-6.6-2.9.7-5.2 5-6.6 7.3-5.9 9.8-10 21.2-12.1 32.4-.8 4.6-1.5 9.8-.2 14.4.8 2.8 2.7 6.7 6.1 4.6 4-2.4 6.5-8.2 8.2-12.4 1.4-3.4 4-8.7 7.5-9.9-4 3.1-10.6 12.2-6.1 17.5 1.8 2.2 5.1 1.4 7.3.1 3.4-2 5.5-5.8 6.6-9.5.6-2.2 2.4-8.4-.4-10-2.1-1.1-3.9 1.5-4.4 3.2-.8 2.9.6 6.9 3.2 8.6 2 1.3 4.1.5 5.9-.8 2.7-2 4.7-4.8 6.7-7.4 1.7-2.1 3.4-5.2 5.9-6.5-3.9 1.9-6.2 6.3-7.1 10.3-.5 2.4-1.1 6.9 1.7 8.2 3.4 1.6 7.7-2.2 9.5-4.6 2.5-3.3 5.5-10 3.4-14.1-1.9-3.6-4.8-.2-4.9 2.9-.1 3 .9 9.5 5.1 8.8 3.5-.6 6.5-4.8 8.4-7.5 2.3-3.2 3.8-7 6.5-9.8 4.5-4.5 1.1 6.6.8 8-.8 3.7-1.5 7.7-1.3 11.5 3.1-8 6.9-14.1 11.9-20.1.4-.5 2-2.4 3.5-2.1 1.8.4.9 4.3.7 6.3-.6 5.1-1.5 8.9-2.6 14 2.5-5.9 4.8-10.9 8.2-15.9 1.4-2.1 4.5-5.8 7.1-6.5 3.5-1 1.9 3.1 1.1 6.2-.5 2.2-3.8 11.7.2 12 2.8.2 5.5-2.8 6.8-4.8 5.9-8.9 4-21.4 1.9-31.2-5.1-24.5-20.6-45.6-42.5-57.9-24.4-13.6-55.6-13.7-80.3-.8-26.8 14-45.5 43.8-45.6 74.1"/></svg>
+<svg version="1.2" baseProfile="tiny" id="line" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" overflow="scroll"><path fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M34 150.6c21.9 29.7 62.4 41.4 98 28.9 28.9-10.1 42.6-33 44.9-41.1.7-2.3 1.2-5.2.5-7.5-1-3.6-5.1-3.3-8.1-2.7-11.2 2.3-21.5 8.8-32 13.2-10.7 4.5-22 8-33.5 9.6-11 1.5-23.8 1.5-33.1-5.4"/></svg>
+<h2>NEO<span id="L">N</span></h2>
+</div>
+</menu>
+<h1 class="titleMain"><span class="titleMain titleS3">Something For Every Ocassion</span><br />
+SUCCULENT FLORAL ARRANGEMENTS</h1><br />
+<p class="textMain">To say succulents are having a moment right now would be an understatement. <br />
+But since they're extremely easy to care for, come in just about every shape, size, color, and are so very cute, we think their popularity is long overdue.</p><br /><br />
+<p class="button" id="button1"><a href="#formCont">Request now!</a></p>
+<p class="button" id="buttonMore"><a href="#more">Learn more</a></p>
+<div class="gradient"></div>
+<div class="shadow"></div>
+</div>
+</header>
+<div class="info">
+<h1 class="title">&ndash;&thinsp;About&thinsp;&ndash;</h1>
+<p class="text">
+Neon Bloom is the world's leading floral and plant service. We believe succulents are living art, and we take great care in delivering beautiful installations to businesses and individuals across the country. Our arrangements move our clients and their customers because they start with great design. Our designers don't just make arrangements — they create living art. Each designer works closely with our dedicated account executives to customize every piece based on space, style, and budget.</p>
+<div class="infoPhotos">
+<div class="infoPhoto1" data-aos="slide-up" data-aos-easing="ease-out" data-aos-offset="200"></div>
+<div class="infoPhoto2" data-aos="slide-up" data-aos-easing="ease-out" data-aos-offset="200"></div>
+<div class="infoPhoto3" data-aos="slide-up" data-aos-easing="ease-out" data-aos-offset="200"></div>
+</div>
+</div>
+<div class="container" id="more" data-aos="bgChange2" data-aos-easing="ease-in-out" data-aos-offset="200">
+<div class="products" id="homes">
+<div class="homesText">
+<h1 class="title titleHomes">Succulent<br />Decorations<br />
+<span class="for">for</span><br />
+<span class="titleHomes titleS2">Your Home</span></h1>
+<p class="text textHomes">Succulent plants are trendy for a reason. With juicy leaves, stems, or roots, succulents form a vast and diverse group of plants, offering easy-care choices for your home.<br /><br />
+The color variation of succulents seems almost endless: blue-green, chartreuse, pink, red, yellow, white, burgundy, almost black, variegated, and more. The leaves may be rounded, needlelike, berrylike, ruffled, or spiky.<br />
+Many have an enticing "touch-me" quality.<br /><br />
+</p><br /><br />
+<p class="button" id="buttonHomes"><a href="#formCont">Adorn your home</a></p>
+<p class="button" id="buttonBack1" onclick="fback1()">&larr; Back</p>
+</div>
+</div>
+<div class="products" id="business">
+<div class="businessText">
+<h1 class="title titleBusiness">Succulents<br />
+<span class="for">for</span><br />
+<span class="titleBusiness titleS2 b">Business</span></h1>
+<p class="text textBusiness">
+Create the perfect professional atmosphere from the moment your clients walk in the door. Our design team will create a stunning arrangement that fits your brand and budget. We also offer a range of flower and plant gifts, so you have one source for any gifts for employees or clients.
+</p><br /><br />
+<p class="button" id="buttonBusiness"><a href="#formCont">Make request</a></p>
+<p class="button" id="buttonBack2" onclick="fback2()">&larr; Back</p>
+</div>
+</div>
+<div class="products" id="gardens">
+<div class="gardensText">
+<h1 class="title titleGardens">Outdoor<br />Succulent<br />
+<span class="titleGardens titleS2 ga">Garden</span></h1>
+<p class="text textGardens"> Succulents, with their striking forms, unusual colors, and easy-care reputation, are becoming increasingly important design elements in many gardens.<br />
+They can be planted in mass, as specimens in the garden, or even featured in containers. <br /><br />
+Succulent garden design is appropriate for warm, temperate and even cold season locations. Succulent plants thrive in sunny, well drained areas with very little maintenance. Although they are very tolerant of dry conditions, succulent plants do need water, especially during the growing season.<br />
+</p><br /><br />
+<p class="button" id="buttonGardens"><a href="#formCont">Enrich garden</a></p>
+<p class="button" id="buttonBack3" onclick="fback3()">&larr; Back</p>
+</div>
+</div>
+<div class="products" id="gifts">
+<div class="giftsText">
+<h1 class="title titleGifts">Succulent<br />
+<span class="titleGifts titleS2 gi">Gifts</span></h1>
+<p class="text textGifts">If you're looking for the perfect gift, then a succulent is the right choice. These trendy plants are sure to make a unique gift for anyone on your list.<br /><br />
+We use the finest and most colorful succulents in all of our gift items. Give a living gift to someone you care about. All that these low maintenance growing gifts require are a little light and water to thrive. </p><br /><br />
+<p class="button" id="buttonGifts"><a href="#formCont">Make a gift</a></p>
+<p class="button" id="buttonBack4" onclick="fback4()">&larr; Back</p>
+</div>
+</div>
+<h1 class="title">&ndash;&thinsp;Our service&thinsp;&ndash;</h1>
+<p class="text">Our services range from providing single plants to delivering individual succulent arrangements to decorating entire living or working spaces.<br />
+We work with hotels, restaurants, offices, residential and commercial buildings, salons, spas, retailers and event spaces.<br /><br />
+</p>
+<div class="products1">
+<div class="productsMini">
+<div class="icons">
+<div class="homesMini">
+<i class="material-icons" id="home" onclick="f1()" onMouseOver="fover1()" onMouseOut="fout1()">home</i></div>
+<div class="gardensMini">
+<i class="material-icons" id="garden" onclick="f3()" onMouseOver="fover3()" onMouseOut="fout3()">spa</i></div>
+<div class="businessMini">
+<i class="material-icons" id="business1" onclick="f2()" onMouseOver="fover2()" onMouseOut="fout2()">business</i></div>
+<div class="giftsMini">
+<i class="material-icons" id="gift" onclick="f4()" onMouseOver="fover4()" onMouseOut="fout4()">local_florist</i></div>
+</div>
+<div class="iconsText">
+<p id="forHome">For Home</p>
+<p id="forGarden">For Garden</p>
+<p id="forBusiness">For Business</p>
+<p id="forGift">Gifting</p>
+</div>
+</div>
+</div>
+</div>
+<div class="steps">
+<h1 class="title">&ndash;&thinsp;How It Works&thinsp;&ndash;</h1>
+<div class="stepsflex">
+<div class="step">
+<h1 class="titleV">D<span>e</span>sign</h1>
+<p class="text stepText">
+Simply fill out the <a href="#formCont">request form</a>, and we will be in touch within 24 hours. Your personal design consultant will meet with you to discuss style, preferences and space.
+</p>
+</div>
+<div class="step">
+<h2 class="titleV">Service</h2>
+<p class="text stepText">
+Our account executives serve as our clients' single point of contact for all of their design, maintenance, and even billing questions.
+We provide a custom proposal based on your schedule (weekly, bi-weekly or monthly).
+</p>
+</div>
+<div class="step bb">
+<h3 class="titleV">Pleasure</h3>
+<p class="text stepText">
+Fresh flower arrangements are designed just for you!
+We take pride in our quality for all occasions, large or small.
+We hand deliver your custom arrangements for your personal use and enjoyment.<br />It's that simple!
+</p>
+</div>
+</div>
+<div class="reviews">
+<h3>"I love the fact that I show up to work and see weekly arrangements. This is easy and affortable to set up for any local business!"</h3><br />
+<p>Amy R., St Louis, MO</p><br /><br /><br />
+<h3>"Exceptional! Very creative and always available to answer questions or consider additions or deletions. I would
+highly recommend Neon Bloom for any of your floral needs."</h3><br />
+<p>Joel H., Omaha, NE</p>
+</div>
+<div class="stripe1"></div>
+<div class="stripe2"></div>
+<div class="stripe3"></div>
+<div class="stripe4"></div>
+<div class="stripe5"></div>
+<div class="stripe6"></div>
+</div>
+<div class="final">
+<h2 class="title"><span class="titleS3">Fill out</span> the form</h2>
+<h3 class="title">to get <span>started</span> today!</h3>
+<div id="formCont">
+<div class="tr">
+<div id="ok">Your form was successfully submitted!</div>
+</div>
+<form name="formMain" data-aos="slide-up">
+<p class="formText">Full name</p>
+<input type="text" name="name">
+<p class="formText">Phone number</p>
+<input type="text" name="phone">
+<p class="formText">Email address</p>
+<input type="text" name="email">
+<p class="formText">Please specify your interest</p>
+<select name="select" id="select" onchange="JavaScript:cmpn()">
+<option value="homes">For home</option>
+<option value="gardens">For garden</option>
+<option value="business">For business</option>
+<option value="gifts">Gifting</option>
+</select>
+<p class="formText" id="companyT">Company</p>
+<input type="text" name="company" id="company">
+<p class="formText">Message</p>
+<textarea name="" id="" cols="30" rows="10"></textarea>
+<input type="button" name="button2" value="Submit now!" class="button" onclick="test(this.form)">
+</form>
+<div class="tr">
+<div id="no">Please fill out alllll the fields!</div>
+</div>
+</div>
+</div>
+<div id="toTop">
+<i class="material-icons">arrow_upward</i>
+</div>
+<footer id="footer">
+<div class="stripe"></div>
+<div class="services">
+<ul>
+<li class="footerTitle">Our Services</li>
+<li onclick="f1(), fback2(), fback3(), fback4()"><a href="#homes">For Your Home</a></li>
+<li onclick="f3(), fback1(), fback2(), fback4()""><a href="#gardens">For Garden</a></li>
+<li onclick="f2(), fback1(), fback3(), fback4()""><a href="#business">For Business</a></li>
+<li onclick="f4(), fback1(), fback2(), fback3()""><a href="#gifts">Gifting</a></li>
+</ul>
+</div>
+<div class="inTouch">
+<h2 class="footerTitle">sign-up for our newsletter</h2>
+<p>For monthly updates and events!</p>
+<input type="text" placeholder="First name" id="firstName">
+<input type="text" placeholder="Email address" id="subscrMail">
+<input type="button" name="button3" value="Go!" class="button" id="btnGo">
+<ul>
+<li class="footerTitle aa">stay in touch</li>
+<li><i class="fab fa-facebook-f"></i></li>
+<li><i class="fab fa-twitter"></i></li>
+<li><i class="fab fa-instagram"></i></li>
+</ul>
+</div>
+<div class="contactUs">
+<ul>
+<li class="footerTitle">Contact Us</li>
+<li><small><i class="fas fa-phone"></i></small> 888-444-2222</li>
+<li>Customer Service:</li>
+<li class="mail">customers@neonbloom.com</li>
+<li>General:</li>
+<li class="mail">neonbloom@neonbloom.com</li>
+<li>444 11th Ave</li>
+<li class="address">New York, NY 10101</li>
+</ul>
+</div>
+<div class="copy">
+<p>&copy; 2018, Neon Bloom | <span>Privacy Policy</span> | <span>Terms of Use</span></p>
+</div>
+</footer>
+</body>
+</html>
